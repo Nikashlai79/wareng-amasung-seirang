@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipuri Culture</title>
+    <style>
+        @font-face {
+            font-family: 'epaomayek';
+            src: url('EPAOMAYEK.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f9e79f, #f7dc6f);
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .epaomayek {
+            font-family: 'epaomayek', Arial, sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .navbar {
+            background: rgba(44, 62, 80, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .nav-menu li {
+            position: relative;
+        }
+
+        .nav-menu li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 0.75rem 1.25rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            display: block;
+        }
+
+        .nav-menu li a:hover,
+        .nav-menu li a:focus {
+            background-color: #e74c3c;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(127, 140, 141, 0.95);
+            backdrop-filter: blur(8px);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            z-index: 100;
+        }
+
+        .nav-menu li:hover .dropdown,
+        .nav-menu li:focus-within .dropdown {
+            display: block;
+        }
+
+        .dropdown li a {
+            font-size: 1.1rem;
+            padding: 0.75rem 1.25rem;
+            color: #ecf0f1;
+        }
+
+        .dropdown li a:hover,
+        .dropdown li a:focus {
+            background-color: #c0392b;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin: 1.5rem 0;
+        }
+
+        section {
+            background-color: #fef9e7;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            color: #2c3e50;
+            text-decoration: underline;
+            margin-bottom: 1rem;
+        }
+
+        .image {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border: 4px solid #e74c3c;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            margin: 1rem 0;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+        }
+
+        .poem {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .poem p {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            color: #ecf0f1;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 3px solid #e74c3c;
+        }
+
+        footer a {
+            color: #e74c3c;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #c0392b;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .nav-menu li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .dropdown {
+                position: static;
+                background: rgba(127, 140, 141, 0.8);
+            }
+
+            .image {
+                width: 100%;
+                height: auto;
+            }
+
+            .poem {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li>
+                <a href="#" class="epaomayek">wareH</a>
+                <ul class="dropdown">
+                    <li><a href="#wahong" class="epaomayek">1. wahoH</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="epaomayek">sEreH</a>
+                <ul class="dropdown">
+                    <li><a href="#siroi-lili" class="epaomayek">1. siroI lili</a></li>
+                    <li><a href="#pun" class="epaomayek">2. puN</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="epaomayek">mnipuri kulture</h1>
+
+        <section id="wahong">
+            <h2 class="epaomayek">1. wahoH</h2>
+            <img src="Wahong.png" alt="Wahong" class="image">
+            <p class="epaomayek">wahoH haIbsi BarYki furuPki UceQni| wahoHlabn mmEgi mtu fNdoQtun lePpdi puQniH hun fjE| K_waIdgi heNn ciH-leMn fjb UceQni haIdun wahoHbu furuPki UceQ AoIn lOribni.</p>
+            <p class="epaomayek">wahoHgi hOrQfMdi s_rilqka| varY AmsuH Ka-noHpoQ Aesiyani hOjiQti maleMgi mfM puMnmQt wahoH lEre| wahoH mKL Ani lE- Amn higoQ mcugi wahoHni Amn Asqb mcugi wahoHni| mKL AnimQki wahoH labgi msan seNtimitr 75 roM saHI, mmEn seNtimitr 150 roM saHI| wahoH labgi fjrb mtoQ paLli.</p>
+            <p class="epaomayek">wahoH labgi mmEd AsaHb mtu paLli| cagoQ Tad wahoH labn fjrb mmEgi mtusiH Adu fNdoQtun UYli| fNdoQp mmEdu mkoQloMd ZMThLli| Adug yaMn leMn mKoH tPn-tPn TaHdun mmEgi mtusiH Adu niQI| mtusiH Adu Amg Amg TeHnbgi mKoL tab fqI| Adudgi wahoH labn mKoL piQlPn yaMn KoHI.</p>
+           <?,?><p class="epaomayek">wahoH AmoMn labdgi Kr piQI| wahoH AmoMgi mcudi Asqbg noHgObi mcug yaNnE| wahoH AmoMgi mtoQ paNde, mmEsu teNtQ tOI| wahoH AmoMn AmuQt mruM mridgi nipaL faUb koQI.</p>
+            <p class="epaomayek">wahoHn AneMb Umod lE| AyuQ-nuHTiL mKoIn puNn caQtamiNnE Adug AhiHd AwaHb Ud toHdun lE.</p>
+            <p class="epaomayek">wahoHn paMbi mca AmsuH TwaIpaNb mca cadun hiHI| KarOnciHb liNsiH yaMn paMn caI.</p>
+        </section>
+
+        <section id="siroi-lili">
+            <h2 class="epaomayek">1. siroI lili</h2>
+            <div class="poem">
+                <img src="Shiroi lily.png" alt="Shiroi lily in a field" class="image">
+                <div>
+                    <p class="epaomayek">bjinadi AEZoNd<br>siroI ciHd saYli haI<br>siroI lili fjE haI.</p>
+                    <p class="epaomayek">AtE mfM Amd,<br>siroI lili, hOde haI,<br>siroI ciHd nYtn.</p>
+                    <p class="epaomayek">hyeH AEn caUrg,<br>ImaNnb kyag,<br>siroI ciHdoH kadun,<br>lili yeHb cYkni.</p>
+                    <p class="epaomayek">lili yeHb cYkni.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pun">
+            <h2 class="epaomayek">2. puN</h2>
+            <img src="pun.jpg" alt="puN" class="image">
+            <div class="poem">
+                <p class="epaomayek">ha puN kanNbi<br>lEbaQ puNdi kanNbi!<br>IsiH yaMn KOraHZe,<br>nqgi IsiH AIqb<br>KjiQtbu TQcge!</p>
+                <p class="epaomayek">puNd TMb IsiHdi<br>yaMn IqI haUIdo!<br>IsiH yaMn KOraHZe,<br>puNgi IsiH AIqb<br>KjiQtbu TQcge|</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="epaomayek">Laishram Nikash Singh | Section: B | Roll No: 2090</p>
+        <p>Laishram Nikash Singh | Section: B | Roll No: 2090</p>
+        <p><a href="mailto:nikash@example.com">Contact Me</a></p>
+    </footer>
+</body>
+</html>
